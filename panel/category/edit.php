@@ -19,7 +19,7 @@ if($category === false)
 
 if(isset($_POST['name']) && $_POST['name'] !== ''){
 
-    $query = 'UPDATE blog_php.categories SET name = ?, updated_at = NOW() WHERE id = ? ;';
+    $query = 'UPDATE blog_php .categories SET name = ?, updated_at = NOW() WHERE id = ? ;';
     $statement = $pdo->prepare($query);
     $statement->execute([$_POST['name'], $_GET['cat_id']]);
     redirect('panel/category');
