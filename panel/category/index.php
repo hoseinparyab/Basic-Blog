@@ -52,7 +52,7 @@ require_once '../../functions/pdo_connection.php';
                                 <td><?= $category->name ?></td>
                                 <td>
                                     <a href="" class="btn btn-info btn-sm">Edit</a>
-                                    <a href="" class="btn btn-danger btn-sm">Delete</a>
+                                    <a href="<?= url('panel/category/delete.php?cat_id='). $category->id ?>" class="btn btn-danger btn-sm">Delete</a>
                                 </td>
                             </tr>
 

@@ -55,7 +55,9 @@ require_once '../../functions/pdo_connection.php';
                             <td>
                                 <a href="" class="btn btn-warning btn-sm">Change status</a>
                                 <a href="" class="btn btn-info btn-sm">Edit</a>
-                                <a href="" class="btn btn-danger btn-sm">Delete</a>
+                                <a href="" class="btn
+                                btn-danger
+                                btn-sm">Delete</a>
                             </td>
                         </tr>
                         </tbody>

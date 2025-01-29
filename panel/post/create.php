@@ -15,14 +15,17 @@ require_once '../../functions/pdo_connection.php';
 </head>
 <body>
 <section id="app">
+    <?php require_once '../layouts/top-nav.php' ?>
 
     <section class="container-fluid">
         <section class="row">
             <section class="col-md-2 p-0">
+                <?php require_once '../layouts/sidebar.php' ?>
+
             </section>
             <section class="col-md-10 pt-3">
 
-                <form action="create.php" method="post" enctype="multipart/form-data">
+                <form action="<?=url('pam')?>" method="post" enctype="multipart/form-data">
                     <section class="form-group">
                         <label for="title">Title</label>
                         <input type="text" class="form-control" name="title" id="title" placeholder="title ...">
