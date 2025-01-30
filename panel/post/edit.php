@@ -49,7 +49,7 @@
 
             if($category !== false && $image_upload !== false)
             {
-             $query = 'UPDATE  blog_php.posts SET title = ?, cat_id = ?, body = ?, image = ?, updated_at = NOW() WHERE id = ? ;';
+             $query = 'UPDATE  blog_php.posts SET title = ?, cat_id = ?, body = ?, image = ?, update_at = NOW() WHERE id = ? ;';
             $statement = $pdo->prepare($query);
             $statement->execute([$_POST['title'], $_POST['cat_id'], $_POST['body'], $image, $_GET['post_id']]);
             }
@@ -57,7 +57,7 @@
         else{
             if($category !== false)
             {
-             $query = 'UPDATE  blog_php.posts SET title = ?, cat_id = ?, body = ?, updated_at = NOW() WHERE id = ? ;';
+             $query = 'UPDATE  blog_php.posts SET title = ?, cat_id = ?, body = ?, update_at = NOW() WHERE id = ? ;';
             $statement = $pdo->prepare($query);
             $statement->execute([$_POST['title'], $_POST['cat_id'], $_POST['body'], $_GET['post_id']]);
             }
